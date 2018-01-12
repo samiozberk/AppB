@@ -1,4 +1,4 @@
-<html>
+44<html>
 <body>
 <script>
     // ---------------------------------------------------------------------
@@ -18,11 +18,16 @@
     
     var resultaat = 0;
     var resultaatTekst = ""; // <------- "" dit betekend dat het een leeg stuk tekst is
-    var getal = 7;           //<----- dit getal wordt gecontroleerd.
-    
+    var getal = 3;     
+    var controleerGetal=5;
     
     // Schrijf hier je code om de probleem op te lossen 
-    
+    if (getal < controleerGetal)  {
+        resultaatTekst = "lager dan 5";
+    }
+    else { 
+        resultaatTekst= "hoger dan 5";
+    }
     
     
     
@@ -35,7 +40,7 @@
     
     
     
-    document.write("<br>Resultaat: " +resultaat);
+    document.write("<br>getal: " +getal);
     document.write("<br>ResultaatTekst: " +resultaatTekst);
     </script>    
     </body>
