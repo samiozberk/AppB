@@ -17,18 +17,37 @@
     // Begin code voor probleem oplossing
     
     var resultaat = 0;
-    var resultaatTekst = ""; // <------- "" dit betekend dat het een leeg stuk tekst is
-    var getal = 3;     
+    var resultaatTekst = ""; 
+    var resultaatTekst2 = ""; // <------- "" dit betekend dat het een leeg stuk tekst is
+    var getal = "hallo";     
     var controleerGetal=5;
     
     // Schrijf hier je code om de probleem op te lossen 
     if (getal < controleerGetal)  {
         resultaatTekst = "lager dan 5";
     }
-    else { 
+    //Als getal hoger is dan 5
+    else if(getal > controleerGetal){ 
         resultaatTekst= "hoger dan 5";
     }
+    else if (getal == controleerGetal){
+        resultaatTekst = "Dezelfde als 5";
+    }
+    else {
+        resultaatTekst = "Dit is gen getal";
+    }
     
+    // Als getal gelijk is aan 5
+    if (getal == controleerGetal) {
+        resultaatTekst2 ="gelijk aan 5";
+    }
+        else if(getal != controleerGetal ){
+            resultaatTekst2= "niet gelijk aan 5";
+    }        
+        
+    
+    
+    // if niet gelijk is aan 5
     
     
     // Als getal hoger is dan 5, maak de resultaatTekst een tekst genaamd: "hoger dan 5".
@@ -42,6 +61,7 @@
     
     document.write("<br>getal: " +getal);
     document.write("<br>ResultaatTekst: " +resultaatTekst);
+    document.write("<br>ResultaatTekst2: " +resultaatTekst2);
     </script>    
     </body>
 </html>
