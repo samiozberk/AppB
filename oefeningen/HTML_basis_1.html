@@ -10,6 +10,7 @@
     In javascript 
         1.c zet een stuk tekst in een variabele 
                 (var gewoonTekst = "hallo vanuit de javascript code";)
+                (var gewoonTekst = "hallo vanuit de javascript code";)
         1.d Maak een functie aan die een tekst in de div van opdracht 1.b zet 
                 (document.getElementById('divIdVanOpdracht1b').textContent = gewoonTekst;)
         1.e Zodra er op de gemaakte knop wordt gedrukt moet de functie hierboven worden aangeroepen
@@ -26,15 +27,15 @@
     </head>
     <body>
         <!--  Schrijf hier je HTML Code  -->
-    
-        
-        
+<button onclick="zelfGemaakteFunctieNaam();">Knop</button>
+        (<div id="idTekst"></div>)
         
         
         
         <!--       in <script></script> kan je je javascript gebruiken -->
         <script>
-            
+            var gewoonTekst = "hallo vanuit de javascript code";
+            document.getElementById('divIdVanOpdracht1b').textContent = gewoonTekst;
         </script>
     </body>
 </html>

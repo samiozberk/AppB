@@ -14,13 +14,18 @@
 //    stap 1:    loopen 1 tot en met 30               (gebruik for()                 )
 //    stap 2:    controleer of het deelbaar is door 4 (gebruik modulus % in een if() )
 //    stap 3:    deelbaar door 4?: bij resul optellen (binnen de if optellen         )
+    var resul= 0; 
     // -----------------------------------------------------------------------
-    
-    var resul= 0;
     // Begin code voor probleem oplossing
+    for (var x=1; x < 30; x++)
+        {
+        if (x % 4 === 0)
+            {
+            var resul = resul + x;
+            }
+        }
     
-    
-    document.write("<br><br>Resultaat: " +result);
+    document.write("<br><br>Resultaat: " +resul);
     
     </script>    
     </body>
