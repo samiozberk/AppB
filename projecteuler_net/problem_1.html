@@ -16,14 +16,20 @@
     
     // Begin code voor probleem oplossing
     
-    var resultaat = 0;
+    var resul = 0;
     
     // Schrijf hier je code om de probleem op te lossen 
-    
+    for (var x=1; x < 1000; x++)
+        {
+        if (x % 3 === 0 || x % 5 ===0)
+            {
+            var resul = resul + x;
+            }
+        }
 
 
     
-    document.write("Resultaat:<br>" +resultaat);
+    document.write("Resultaat:<br>" +resul);
     </script>    
     </body>
 </html>
