@@ -1,0 +1,72 @@
+<html><head></head><body>
+<h1>Calculator<h1/>
+<input type="text" name="getal" id="invoerveld">
+<input type="text" name="getal2" id="invoerveld2">
+<br/>
+<button onclick="optelfunctie()">optellen</button>
+
+<button onclick="verminderfunctie()">verminderen</button>
+<br/>
+<button onclick="delenfunctie()">delen</button>
+
+<button onclick="vermenigvuldigenfunctie()">vermenigvuldigen</button>
+<!-- ReultaatDiv -->
+<h2>Antwoord:</h2>
+<div id="resultaat">
+</div>
+  
+</body></html>
+    <script>
+    
+var invoerveld=document.getElementById("invoerveld");
+var invoerveld2=document.getElementById("invoerveld2");
+var resultaat=0;
+DivElement= document.getElementById("resultaat");
+
+function optelfunctie(){
+// invoervelden in variabele zetten
+// variabele berekenen en in resultaat variabele zetten
+resultaat=parseInt(invoerveld.value) + parseInt(invoerveld2.value);
+DivElement.innerHTML= resultaat;
+//in resultaat div zetten
+}
+
+function verminderfunctie(){
+resultaat=parseInt(invoerveld.value) - parseInt(invoerveld2.value);
+DivElement.innerHTML=resultaat;
+}
+
+function delenfunctie(){
+resultaat=parseInt(invoerveld.value) / parseInt(invoerveld2.value);
+DivElement.innerHTML=resultaat;
+}
+
+function vermenigvuldigenfunctie(){
+  resultaat=parseInt(invoerveld.value) * parseInt(invoerveld2.value);
+
+  DivElement.innerHTML=resultaat;
+}
+</script>
+<html>
+<body>
+<style> 
+body {
+  background-color:green;
+  
+}
+
+#invoerveld, #invoerveld2 {
+  height:30px;
+  width: 30px;
+}
+
+button {
+  height:30px;
+  width: 200px;
+  font-size:20px;
+  border-radius:5px;
+  
+}   
+    </style> 
+</body>   
+     </html>
